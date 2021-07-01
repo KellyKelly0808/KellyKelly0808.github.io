@@ -1,15 +1,265 @@
 
 
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
     <title>關於我</title>
-</head>
-<body>
-    <h1>關於我</h1>
-</body>
+    <style type="text/css">
+        *{
+            margin: 0;
+            padding:0;
+            list-style: none;
+        }
+        img{vertical-align: bottom;}   
+         
+    
+        .footer{
+            background-color:pink;
+            color: black;
+            text-align: center;
+            padding:20px 0px;
+        }
+        .item-group{
+            width:100%;
+            max-width:1400px;
+            margin: auto;
+        }
+      
+        .title{
+            margin: 0px 0px 20px;
+            padding:30px 10px;
+            background-color:gainsboro;
+        }
+        .title h2{text-align: center;
+                  font-size: 30px;
+                  color: darkblue;}
+        .title p{
+                font-size: 20px;
+                text-align: center;
+        }
+        .item{margin:0px 10px 40px;
+        }
+        .item .text h3{
+            font-size: 24px;
+            text-align: center;
+            color:darkblue;
+        }
+        .item .pic img{
+            width:100%;
+        }
+        .service{
+            margin:60px 0px;
+            background-color:gainsboro;
+        }
+        .service .item{margin:0;}
+  
+        @media screen and (min-width:768px){
+            .item-group{
+                display:flex;
+                }
+                .service .item{
+                    display:flex;
+    
+                }
+                .service .item .pic,
+             .service .item .text{
+                 width: 50%;
+                 margin: 0;
+             }
+    
+                .service .item .text{
+                    display: flex;
+                    padding:0px 20px;
+                    box-sizing:border-box;
+                    flex-direction: column;
+                    justify-content: center;
+                }
+    
+        }
+      
+        </style>
+   
+  </head>
+  <body style="background-color:pink;">
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+              <a class="navbar-brand"  id="top">KellyKelly>>></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+                <ul class="navbar-nav">
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Here
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                      <li><a class="dropdown-item" href="#skills">Skills</a></li>
+                      <li><a class="dropdown-item" href="#hobby">Hobby</a></li>
+                      <li><a class="dropdown-item" href="#aboutme">About me</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+  </div>
+    <div class="container">
+      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+    
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+          <img class="w-100" src="https://picsum.photos/800/800?random=10"   alt="假圖">
+          <div class="carousel-caption d-none d-md-block">
+            <h5 style="color:blanchedalmond;font-size: 35px;">Nice to meet you!</h5>
+            <p style="color:blanchedalmond;font-size: 30px;">「人生就像一盒巧克力，你不知道下一顆是什麼，才有趣。」</p>
+          </div>
+      </div>
+      <div class="carousel-item">
+          <img  class="w-100" src="https://picsum.photos/500/500?random=12" class="d-block w-100" alt="假圖">
+          <div class="carousel-caption d-none d-md-block">
+            <h5 style="color:blanchedalmond;font-size: 35px;">Hello,I am Kelly!</h5>
+            <p style="color:blanchedalmond;font-size: 30px;">「生命可以歸結為一種簡單的選擇：要麼忙於生存，要麼趕著去死。」</p>
+          </div>
+      </div>
+      <div class="carousel-item">
+          <img  class="w-100" src="https://picsum.photos/500/500?random=15" class="d-block w-100" alt="假圖">
+          <div class="carousel-caption d-none d-md-block">
+            <h5 style="color:blanchedalmond;font-size: 35px;">I am glad that you are here!</h5>
+            <p style="color:blanchedalmond;font-size: 30px;"> No matter how your heart is grieving, if you keep on believing, the dream that you wish will come true.</p>
+          </div>
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <div class="about">
+    <div class="wrap">
+             <div class="title">
+                 <h2 id="aboutme">關於我</h2>
+                 <p>2021年1月底，因為對於網頁設計有興趣而一腳踏進前端領域，除了自學外，也參與實體課程和線上課程，
+                    透過接觸前端領域和後端領域，加上自我要求，和對程式的熱愛，運用自己所學製作了三個SideProject，
+                   懷抱著對軟體產業的願景下，這一步職涯目標，是以軟體工程師的角色，加入一間具有創新、和諧、超越之精神的公司，期許未來能持續創作更多專案與作品。 </p>
+               </div>
+  
+            
+                </div>
+      </div>
+</div>
+</div>
+<div class="container">
+<div class="service">
+      <div class="wrap">
+              <div class="item-group">
+                  <div class="item">
+                    <div class="pic"><img src="https://picsum.photos/900/600?random=10"></div>
+                        <div class="text" id="skills"  >
+                         
+                           <ul>
+                            <h4  style="color: darkblue;"><strong>Fornt-end</strong></h4>
+                                 <li>HTML/CSS/JavaScript</li> 
+                                 <li>Bootstrap</li>
+                                 <li>Vue.js</li>
+                                 <li>Ajax</li>
+                           </ul>
+                      
+
+                        </div>
+                        <div class="text">
+                           
+                             <ul>
+                                <h4 style="color: darkblue;"><strong>Back-end</strong></h4>
+                                   <li>Node.js/Express.js</li> 
+                                   <li>Ruby On Rails</li> 
+                                   <li>Heroku</li> 
+                                   <li>Firebase</li>
+                             </ul>
+                        
+  
+                          </div>
+                  </div>
+             </div>
+      </div>
+</div>
+</div>
+<div class="container">
+<div class="about">
+    <div class="wrap">
+             <div class="title">
+                 <h2>座右銘</h2>
+                 <p>「人生就像一盒巧克力。」這是我最喜歡的一句話，也是我的座右銘，它在我面臨考驗時給我力量，也在我克服困難時給我鼓勵，期許自己一天比一天進步，一天比一天更接近目標。 </p>
+             </div>
+             <div class="row row-cols-1 row-cols-md-3 g-4">
+              <div class="col" id="hobby">
+                <div class="card h-100 ">
+                  <img  src="https://picsum.photos/300/300?random=16" class="card-img-top" alt="假圖">
+                  <div class="card-body" style="background-color: gainsboro;">
+                  <h5 class="card-title" style="color: darkblue;"><strong>登山</strong></h5>
+                    <p class="card-text">假日到郊山踏踏青、散散步是我的嗜好之一，喜歡藉此享受芬多精，也同時沉澱忙碌腳步。</p>
+                  </div>
+                  <!-- <div class="card-footer">
+                    <small class="text-muted">Last updated 3 mins ago</small>
+                  </div> -->
+                </div>
+              </div>
+              
+              <div class="col ">
+                <div class="card h-100  ">
+                  <img  src="https://picsum.photos/300/300?random=17" class="card-img-top" alt="假圖">
+                  <div class="card-body "  style="background-color: gainsboro;">
+                    <h5 class="card-title" style="color: darkblue;"><strong>繪畫</strong></h5>
+                    <p class="card-text">畫畫讓我的心靈感到平靜也自在，最常使用的媒材是水彩顏料，也會使用壓克力顏料與油畫顏料，歡迎光臨我放作品的<a href="https://www.instagram.com/happylala_art/?hl=zh-tw" target="_blank">Instagram</a>。</p>
+                  </div>
+                  <!-- <div class="card-footer">
+                    <small class="text-muted">Last updated 3 mins ago</small>
+                  </div> -->
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100">
+                  <img src="https://picsum.photos/300/300?random=18" class="card-img-top" alt="假圖">
+                  <div class="card-body" style="background-color: gainsboro;">
+                    <h5 class="card-title" style="color: darkblue;"><strong>樂曲賞析</strong></h5>
+                    <p class="card-text">非常喜歡聆聽爵士樂與古典音樂，也有研究電影配樂與藝術相關的音樂，製作了26集podcast，歡迎光臨我的<a href="https://happylala.firstory.io/" target="_blank">音樂節目</a>。</p>
+                  </div>
+                  <!-- <div class="card-footer">
+                    <small class="text-muted">Last updated 3 mins ago</small>
+                  </div> -->
+                </div>
+              </div>
+            </div>     
+                </div>
+      </div>
+  </div>
+</div>
+<div class="container">
+<div class="footer" style="font-size: 20px;" >
+   <span style="background-color: gold;border-radius: 20%;"> &copy; copyright 2021 by KellyKelly</span>
+   <span>>>></span><a href="#top">Top</a>
+</div>
+</div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+
+  </body>
 </html>
